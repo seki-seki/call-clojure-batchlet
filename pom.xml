@@ -4,6 +4,7 @@
   <groupId>call-clojure-batchlet</groupId>
   <artifactId>call-clojure-batchlet</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -46,9 +47,10 @@
 
   <dependencies>
     <dependency>
-      <groupId>javax.batch</groupId>
-      <artifactId>javax.batch-api</artifactId>
-      <version>1.0</version>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+      <version>7.0</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.jboss.weld.se</groupId>
