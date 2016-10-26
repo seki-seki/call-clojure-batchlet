@@ -29,7 +29,17 @@
             </goals>
           </execution>
         </executions>
-
+      </plugin>
+      <plugin>
+        <groupId>net.unit8.maven.plugins</groupId>
+        <artifactId>job-streamer-maven-plugin</artifactId>
+        <version>0.1.0</version>
+        <configuration>
+          <controlBusHost>localhost</controlBusHost>
+          <controlBusPort>45102</controlBusPort>
+          <name>job-streamer-examples</name>
+          <description>This is examples.</description>
+        </configuration>
       </plugin>
     </plugins>
   </build>
